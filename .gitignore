@@ -2,6 +2,7 @@
 build/
 # Prerequisites
 *.d
+CMakeCache.txt
 
 # Compiled Object files
 *.slo
