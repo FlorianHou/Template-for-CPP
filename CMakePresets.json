@@ -8,7 +8,7 @@
             "generator": "Ninja",
             "binaryDir": "${sourceDir}/out/build/${presetName}",
             "installDir": "${sourceDir}/out/install/${presetName}",
-            "toolchainFile": "/home/florian/vcpkg/scripts/buildsystems/vcpkg.cmake",
+            "toolchainFile": "$env{HOME}/vcpkg/scripts/buildsystems/vcpkg.cmake",
             "environment": {
                 "VCPKG_FEATURE_FLAGS": "manifests,versions,binarycaching,registries"
             },
@@ -38,6 +38,21 @@
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Release"
             }
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "core-test-linux",
+            "description": "Enable output on failure",
+            "configurePreset": "linux-debug",
+            "output": {
+                "outputOnFailure": true
+            }
+        },
+        {
+            "name": "core-test-windows",
+            "inherits": "core-test-linux",
+            "configurePreset": "x64-debug"
         }
     ]
 }
