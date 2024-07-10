@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/florian/Code/CPP/hello/build/Debug001",
-  "command": "/usr/bin/c++ -g -o CMakeFiles/hello.dir/src/main.cpp.o -c /home/florian/Code/CPP/hello/src/main.cpp",
-  "file": "/home/florian/Code/CPP/hello/src/main.cpp"
-}
-]
